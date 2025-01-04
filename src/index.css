@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+.rancho{
+    font-family: "Rancho", serif;
+  }
+  .my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: hbounce 2s; /* Animation applied initially */
+  }
+  
+  /* Keyframes for your bounce animation */
+  @keyframes hbounce {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .my-element:hover {
+    animation: hbounce 2s;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
