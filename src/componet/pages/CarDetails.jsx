@@ -9,7 +9,7 @@ import { AuthContext } from "../../Auth/AuthProvider";
 const CarDetails = () => {
   const { id } = useParams(); // Get car ID from URL
   const [car, setCar] = useState([]);
-  const {user}=useContext(AuthContext)
+  const {user,loader}=useContext(AuthContext)
   const navigate=useNavigate()
   const [isModalOpen, setModalOpen] = useState(false);
   const [startDate, setStartDate] = useState(new Date())
@@ -81,8 +81,13 @@ const formData = {
 
 
 }
-
-
+if(loader){
+  return <span className="loading loading-spinner loading-md"></span>
+}
+const available=car.availibility==='available'
+console.log(car)
+console.log("see", available)
+console.log("see2",car.model)
   return (
     <div className="p-5 my-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -166,7 +171,7 @@ const formData = {
 
       </form>
       <button 
-          disabled={isConfirm}
+          disabled={isConfirm || !available}
           onClick={() => setModalOpen(true)}
             className="btn w-full btn-primary mt-5 "
           >
