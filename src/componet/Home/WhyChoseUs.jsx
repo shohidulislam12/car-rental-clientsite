@@ -8,7 +8,7 @@ const WhyChoseUs = () => {
     return (
 <div>
 
-<div className="flex flex-col md:flex-row font-bold my-20  animate__animated animate__bounce px-20">
+<div className="flex flex-col md:flex-row font-bold md:my-20   ny-5 animate__animated animate__bounce p-4 md:px-20">
         <h2 className="text-3xl flex-1  ">Why Choose Us?</h2>
         <p className="text-sm flex-1  text-gray-400">At CarGoRent, we aim to provide you with a seamless and reliable car rental experience. Whether you're planning a weekend getaway, a business trip, or a special occasion, our platform offers a wide range of vehicles and exceptional services tailored to meet your needs. Here’s why we stand out:</p>
     </div>

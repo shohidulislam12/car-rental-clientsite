@@ -53,14 +53,14 @@ const Navbar = () => {
   </>
   
     return (
-        <div className="navbar bg-base-300 ">
+        <div className="navbar  top-0 fixed z-50 container mx-auto left-0 right-0  bg-base-300 ">
         <div className="flex-1 gap-2">
           <img className="h-10 w-10 rounded-sm" src="https://i.postimg.cc/hj7RWKwt/logo.jpg" alt="" />
           <Link to='/' className="text-2xl text-black font-semibold rancho">CarGoRent</Link>
         </div>
         <div>
           {
-            user?<h2 className="text-2xl rancho text-gray-500">Welcome Mr,{userData?.name
+            user?<h2 className="text-2xl hidden md:flex rancho text-gray-500">Welcome Mr,{userData?.name
             }</h2>:''
           }
         </div>

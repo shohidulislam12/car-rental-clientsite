@@ -88,7 +88,7 @@ const AvailableCars = () => {
         <div className="flex items-center gap-3">
           <button
             onClick={() => setViewMode("grid")}
-            className={`btn btn-square ${viewMode === "grid" && "btn-primary"}`}
+            className={`btn hidden md:flex btn-square ${viewMode === "grid" && "btn-primary"}`}
           >
             <MdGridOn />
           </button>
@@ -97,18 +97,18 @@ const AvailableCars = () => {
             className={`btn btn-square ${viewMode === "list" && "btn-primary"}`}
           >
             <MdViewList />
-          </button>
+          </button> 
         </div>
       </div>
 
       {/* Cars Display */}
        { viewMode==="grid"?
-        <div className="grid gap-5 grid-cols-2 md:grid-cols-3">
+        <div className="md:grid  gap-5 grid-cols-2 md:grid-cols-3">
           {
            avlcars.map(car=>
               <NavLink to={`/cardetails/${car._id}`} 
               key={car._id}
-              className="card bg-base-100 shadow-md border border-gray-200"
+              className="card  bg-base-100  shadow-md border border-gray-200"
             >
               <figure>
                 <img
@@ -150,7 +150,7 @@ const AvailableCars = () => {
             avlcars.map(car=>
               <NavLink to={`/cardetails/${car._id}`}
               key={car._id}
-              className="card flex flex-row  items-center  bg-base-100 shadow-md border gap-4 p-5  border-gray-200"
+              className="card flex md:flex-row flex-col items-center  bg-base-100 shadow-md border gap-4 p-5  border-gray-200"
             >
               <div className="">
               <figure>

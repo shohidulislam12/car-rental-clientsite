@@ -22,14 +22,14 @@ const RecentListing = () => {
         <div className="text-center items-center ">
             <h2 className="text-2xl p-5  font-bold items-center">See Our Resent Listing Cars</h2>
             <span className="flex justify-center flex-col md:flex-row items-center text-center  gap-5">
-                <li className="btn btn-outline btn-info">Wide Variety</li>
-<li className="btn btn-outline btn-info">Modern Features</li>
-<li className="btn btn-outline btn-info">Affordable Rates</li>
-<li className="btn btn-outline btn-info">Easy Bookingsystem.</li>
+                <li className=" ">Wide Variety</li>
+<li className=" ">Modern Features</li>
+<li className=" ">Affordable Rates</li>
+<li className=" ">Easy Bookingsystem.</li>
             </span>
         </div>
            <div className="container flex items-center mx-auto py-8">
-        <h2 className="text-3xl font-semibold text-gray-800 w-[20%] text-center mb-4">
+        <h2 className="text-3xl font-semibold text-gray-800 md:w-[20%] text-center mb-4">
           Recent Listings
         </h2>
         <Marquee>
@@ -40,7 +40,7 @@ const RecentListing = () => {
         </p>
         </Marquee>
       </div>
-        <div className="grid gap-10 md:grid-cols-3 my-10 grid-cols-1">
+        <div className="grid gap-10 md:grid-cols-3  my-10 grid-cols-1">
             {cars.map(car=><CarsInf key={car._id} car={car}></CarsInf>)}
          
         </div>

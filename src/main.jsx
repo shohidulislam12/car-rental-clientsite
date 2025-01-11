@@ -26,6 +26,7 @@ import CarDetails from './componet/pages/CarDetails';
 import ManageCar from './componet/pages/ManageCar';
 import ReviewCar from './componet/pages/ReviewCar';
 import UpdateBook from './UpdateBook';
+import Faq from './componet/pages/Faq';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +42,7 @@ const router = createBrowserRouter([
         <RecentListing></RecentListing>
         <Testimonial></Testimonial>
         <SpecialOffer></SpecialOffer>
+        <Faq></Faq>
         </>
       },
  
