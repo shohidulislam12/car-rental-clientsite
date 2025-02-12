@@ -28,13 +28,13 @@ if (cars.length === 0){
        );
  }
   return (
-    <div className="my-10 px-5">
+    <div className="py-10 px-5 dark:bg-black dark:text-white">
       <h2 className="text-3xl font-bold mb-8 text-center">Special Offers</h2>
       <div className="grid  grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
         {cars.map((car, index) => (
           <NavLink to='/available'
             key={index}
-            className="bg-gradient-to-r my-element bg-[#F7F9FC] text-black to-indigo-600  h-72 md:h-64  flex flex-col flex-grow p-6 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl animate__animated animate__slideInLeft"
+            className="bg-gradient-to-r my-element dark:bg-gray-200 bg-[#F7F9FC] text-black to-indigo-600  h-72 md:h-64  flex flex-col flex-grow p-6 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl animate__animated animate__slideInLeft"
           >
             <h3 className="text-2xl font-semibold mb-4">Get {car.discount
             }{ "% "} {car.modal}</h3>

@@ -7,7 +7,7 @@ const CarsInf = ({car}) => {
 const {_id, modal, dailyPrice, availibility, features, description, reg_number, carimgages,status,addDate, location, wonerEmail, wonerName, wonerPhoto}=car
     return (
        <>
-        <NavLink to='/available' className=" overflow-hidden rounded-xl shadow-lg bg-white transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <NavLink to='/available' className=" overflow-hidden rounded-xl shadow-lg dark:bg-gray-100 bg-white transition-transform transform hover:scale-105 hover:shadow-2xl">
      
      <img
        className=" p-4 mx-auto h-72  transform transition duration-500 hover:scale-105  object-cover"
@@ -16,9 +16,9 @@ const {_id, modal, dailyPrice, availibility, features, description, reg_number, 
      />
 
      <div className="px-4  py-4">
-       <h2 className="text-2xl font-semibold text-gray-800">{modal}</h2>
+       <h2 className="text-2xl font-semibold dark:text-black text-gray-800">{modal}</h2>
 
-       <p className="text-sm font-bold text-gray-500">
+       <p className="text-sm font-bold dark:text-black text-gray-500">
   Details: {description ? `${description.slice(0, 30)}...` : "No description available."}
 </p>
 

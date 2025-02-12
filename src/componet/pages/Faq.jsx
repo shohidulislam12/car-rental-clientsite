@@ -2,7 +2,7 @@
 const Faq = () => {
     return (
 
-            <div className="join mt-10 join-vertical w-full">
+            <div className="join dark:bg-black dark:text-white p-2 pt-10 join-vertical w-full">
   {/* FAQ 1 */}
   <div className="collapse collapse-arrow join-item border-base-300 border">
     <input type="radio" name="faq-accordion" defaultChecked />

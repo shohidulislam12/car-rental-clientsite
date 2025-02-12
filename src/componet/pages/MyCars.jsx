@@ -95,12 +95,12 @@ const data = [
        <>
 
       {cars.length===0?
-        <div className="text-center my-10">
+        <div className="text-center h-screen  my-10">
         <h2 className="text-xl font-semibold">You have no cars listed.</h2>
         <p className="mt-4">
           Click <Link to="/addcar" className="text-blue-500 underline">here</Link> to add a car.
         </p>
-      </div>: <div className="overflow-x-auto mx-auto ">
+      </div>: <div className="overflow-x-auto h-screen mx-auto ">
        <div className="item text-center">
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">

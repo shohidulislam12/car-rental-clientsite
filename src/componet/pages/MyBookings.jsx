@@ -169,12 +169,12 @@ handleEdit(id)
     return (
        <>
       {cars.length===0?
-        <div className="text-center my-10">
+        <div className="text-center h-screen my-10">
         <h2 className="text-xl font-semibold">You have no cars Booked.</h2>
         <p className="mt-4">
           Click <Link to="/available" className="text-blue-500 underline">here</Link> to add a car.
         </p>
-      </div>: <div className="overflow-x-auto mx-auto ">
+      </div>: <div className="overflow-x-auto mx-auto h-screen ">
        <div className="item text-center">
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">

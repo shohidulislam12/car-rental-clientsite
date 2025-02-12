@@ -80,10 +80,10 @@ const handlestatusChange=async(id,prevstatus,status)=>{
     return (
        <>
       {cars.length===0?
-        <div className="text-center my-10">
+        <div className="text-center h-screen my-10">
         <h2 className="text-xl font-semibold">No one Book Yours Car If Book Then You See and Manage All .</h2>
        
-      </div>: <div className="overflow-x-auto mx-auto ">
+      </div>: <div className="overflow-x-auto h-screen  mx-auto ">
        <div className="item text-center">
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">

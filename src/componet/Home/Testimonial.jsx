@@ -34,11 +34,11 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="my-10 px-5 text-center">
+    <div className="py-10 dark:bg-black dark:text-white px-5 text-center">
       <h2 className="text-3xl font-bold mb-8">What Our Customers Say</h2>
       <div className="relative w-full transition-transform transform hover:scale-105 hover:shadow-2xl max-w-lg mx-auto">
         {/* Testimonial Card */}
-        <div className="bg-white shadow-lg p-6 rounded-lg transition-transform transform duration-500">
+        <div className="bg-white dark:bg-gray-100 shadow-lg p-6 rounded-lg transition-transform transform duration-500">
           {/* User Photo */}
           <div className="flex items-center justify-center mb-4">
             <img
