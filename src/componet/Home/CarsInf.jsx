@@ -18,7 +18,9 @@ const {_id, modal, dailyPrice, availibility, features, description, reg_number, 
      <div className="px-4  py-4">
        <h2 className="text-2xl font-semibold text-gray-800">{modal}</h2>
 
-       <p className="text-xl font-bold text-green-600">{dailyPrice}$/day</p>
+       <p className="text-sm font-bold text-gray-500">
+  Details: {description ? `${description.slice(0, 30)}...` : "No description available."}
+</p>
 
        <span
          className={`inline-block py-1  gap-4 mx-3 px-3 mt-2 text-white text-sm font-semibold rounded-full ${

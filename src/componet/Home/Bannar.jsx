@@ -15,11 +15,11 @@ setActiveSlide((prevslider)=>prevslider===5?1:prevslider+1)
     return (
         <div className="carousel w-full">
         <div
-          className={`carousel-item relative w-full h-[400px] bg-cover bg-center ${
+          className={`carousel-item relative w-full h-[500px] bg-cover bg-center ${
             activeSlide === 1 ? "block" : "hidden"
           }`}
           style={{
-            backgroundImage: "url('https://i.postimg.cc/02fLwSWc/download.jpghttps://i.postimg.cc/x11BydBY/download-2.jpg')",
+            backgroundImage: "url('https://i.ibb.co.com/FLMyYBxb/pavel-golasowski-59-j-OIzu1-DE-unsplash.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white px-4">
@@ -28,16 +28,16 @@ setActiveSlide((prevslider)=>prevslider===5?1:prevslider+1)
               We offer professional car rental & limousine services in our range
               of high-end vehicles.
             </p>
-            <Link  to='/available' className="btn bg-base-100 text-black btn-primary ">View Available Cars</Link>
+            <Link  to='/available' className="btn bg-base-100 text-black btn-outline ">View Available Cars</Link>
           </div>
         </div>
 
         <div
-          className={`carousel-item relative w-full h-[400px] bg-cover bg-center ${
+          className={`carousel-item relative w-full h-[500px] bg-cover bg-center ${
             activeSlide === 2 ? "block" : "hidden"
           }`}
           style={{
-            backgroundImage: "url('https://i.postimg.cc/02fLwSWc/download.jpg')",
+            backgroundImage: "url('https://i.ibb.co.com/R4H4ssTj/bro-takes-photos-2-NId3w-Bl-G7k-unsplash.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-4">
@@ -45,13 +45,13 @@ setActiveSlide((prevslider)=>prevslider===5?1:prevslider+1)
             <p className="text-lg mb-6">
             Your next adventure is just a rental away. At CargoRent, we offer more than just cars—we offer the opportunity to make memories. 
             </p>
-            <Link to='/available' className="btn bg-base-100 text-black btn-secondary">Book Now</Link>
+            <Link to='/available' className="btn bg-base-100 text-black btn-outline">Book Now</Link>
           </div>
         </div>
   
         {/* Slide 3 */}
         <div
-          className={`carousel-item relative w-full h-[400px] bg-cover bg-center ${
+          className={`carousel-item relative w-full h-[500px] bg-cover bg-center ${
             activeSlide === 3 ? "block" : "hidden"
           }`}
           style={{
@@ -63,15 +63,15 @@ setActiveSlide((prevslider)=>prevslider===5?1:prevslider+1)
             <p className="text-lg mb-6">
             Traveling should be about exploration, not about stress. Our reliable car rental service ensures you can explore new places without worrying about your ride. With our easy booking process and well-maintained vehicles, you're ready for your next adventure.
             </p>
-            <Link to='/available' className="btn bg-base-100 text-black btn-accent">Get Started</Link>
+            <Link to='/available' className="btn bg-base-100 text-black btn-outline">Get Started</Link>
           </div>
         </div>
         <div
-          className={`carousel-item relative w-full h-[400px] bg-cover bg-center ${
+          className={`carousel-item relative w-full h-[500px] bg-cover bg-center ${
             activeSlide === 4 ? "block" : "hidden"
           }`}
           style={{
-            backgroundImage: "url('https://i.postimg.cc/jjW9mFsF/images.jpg')",
+            backgroundImage: "url('https://i.ibb.co.com/7xfwjNqv/wolf-schram-19t6-J2-RVq-QE-unsplash.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-4">
@@ -79,15 +79,15 @@ setActiveSlide((prevslider)=>prevslider===5?1:prevslider+1)
             <p className="text-lg mb-6">
             Whether you're heading out for a weekend getaway or on a business trip, our cars are here to turn your journey into an unforgettable experience.
             </p>
-            <Link to='/available' className="btn bg-base-100 text-black btn-accent">See All </Link>
+            <Link to='/available' className="btn bg-base-100 text-black btn-outline">See All </Link>
           </div>
         </div>
         <div
-          className={`carousel-item relative w-full h-[400px] bg-cover bg-center ${
+          className={`carousel-item relative w-full h-[500px] bg-cover bg-center ${
             activeSlide === 5 ? "block" : "hidden"
           }`}
           style={{
-            backgroundImage: "url('https://i.postimg.cc/rpkbZxf2/images10.jpg')",
+            backgroundImage: "url('https://i.ibb.co.com/C3LjCtYL/shayan-godarzi-8x6infd-KZJI-unsplash.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-4">
@@ -95,7 +95,7 @@ setActiveSlide((prevslider)=>prevslider===5?1:prevslider+1)
             <p className="text-lg mb-6">
               Book your next ride with our affordable and luxurious cars.
             </p>
-            <Link View Available Cars className="btn bg-base-100 text-black btn-accent">View Available Cars</Link>
+            <Link View Available Cars className="btn bg-base-100 text-black btn-outline">View Available Cars</Link>
           </div>
         </div>
   

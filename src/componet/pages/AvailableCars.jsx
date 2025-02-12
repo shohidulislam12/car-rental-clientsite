@@ -49,7 +49,13 @@ const AvailableCars = () => {
     setCars(sortedCars);
     setSortBy(type);
   };
-
+  if (avlcars.length === 0){
+    return (
+           <div className="flex justify-center items-center h-screen">
+             <span className="loading loading-spinner loading-lg"></span>
+           </div>
+         );
+   }
 
 //console.log(search)
   return (
@@ -83,7 +89,7 @@ const AvailableCars = () => {
             </li>
   </ul>
 </div>
-
+      
         {/* View Mode Toggle */}
         <div className="flex items-center gap-3">
           <button

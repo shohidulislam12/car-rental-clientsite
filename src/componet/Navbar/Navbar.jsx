@@ -60,7 +60,7 @@ const Navbar = () => {
         </div>
         <div>
           {
-            user?<h2 className="text-2xl hidden md:flex rancho text-gray-500">Welcome Mr,{userData?.name
+            user?<h2 className="text-2xl hidden md:flex rancho text-black">Welcome Mr,{userData?.name
             }</h2>:''
           }
         </div>

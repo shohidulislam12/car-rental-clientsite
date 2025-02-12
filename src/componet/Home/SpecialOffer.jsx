@@ -20,10 +20,13 @@ const SpecialOffer = () => {
   },[])
 
 //console.log("cars from offer",cars)
-
-
-
-
+if (cars.length === 0){
+  return (
+         <div className="flex justify-center items-center h-screen">
+           <span className="loading loading-spinner loading-lg"></span>
+         </div>
+       );
+ }
   return (
     <div className="my-10 px-5">
       <h2 className="text-3xl font-bold mb-8 text-center">Special Offers</h2>
@@ -38,7 +41,7 @@ const SpecialOffer = () => {
             <p className="mb-6 flex-grow  text-sm">{car.description}</p>
             <a
               href={car?.buttonLink}
-              className="flex items-center bg-[#0056D2] text-white p-2 rounded-md font-semibold hover:bg-yellow-600 transition"
+              className="flex items-center bg-[#0056D2] text-white p-2 rounded-md font-semibold hover:bg-transparent hover:border hover:text-black transition"
             >
               {"books Now"} <AiOutlineArrowRight className="ml-2" />
             </a>

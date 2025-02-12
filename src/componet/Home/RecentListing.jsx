@@ -15,7 +15,13 @@ const RecentListing = () => {
       }
     fetchallcars()
   },[])
-
+  if (cars.length === 0){
+    return (
+           <div className="flex justify-center items-center h-screen">
+             <span className="loading loading-spinner loading-lg"></span>
+           </div>
+         );
+   }
   //console.log("all are",cars)
     return (
      <div className="my-20">

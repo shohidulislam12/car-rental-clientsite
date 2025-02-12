@@ -96,7 +96,7 @@ if(availability===''){
           <textarea
             id="features"
             name="features"
-            placeholder='write heature separet by comma'
+            placeholder='write feature separet by comma'
             className="w-full p-3 border border-gray-300 rounded"
           required
             rows="4"

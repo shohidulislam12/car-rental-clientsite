@@ -81,10 +81,8 @@ const handlestatusChange=async(id,prevstatus,status)=>{
        <>
       {cars.length===0?
         <div className="text-center my-10">
-        <h2 className="text-xl font-semibold">You have no cars listed.</h2>
-        <p className="mt-4">
-          Click <Link to="/available" className="text-blue-500 underline">here</Link> to add a car.
-        </p>
+        <h2 className="text-xl font-semibold">No one Book Yours Car If Book Then You See and Manage All .</h2>
+       
       </div>: <div className="overflow-x-auto mx-auto ">
        <div className="item text-center">
          {/* sorting buton */}

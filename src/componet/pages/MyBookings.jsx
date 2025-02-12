@@ -170,7 +170,7 @@ handleEdit(id)
        <>
       {cars.length===0?
         <div className="text-center my-10">
-        <h2 className="text-xl font-semibold">You have no cars listed.</h2>
+        <h2 className="text-xl font-semibold">You have no cars Booked.</h2>
         <p className="mt-4">
           Click <Link to="/available" className="text-blue-500 underline">here</Link> to add a car.
         </p>
