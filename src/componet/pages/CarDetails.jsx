@@ -89,14 +89,14 @@ console.log(car)
 console.log("see", available)
 console.log("see2",car.model)
   return (
-    <div className="p-5 my-20">
+    <div className="p-5 dark:bg-gray-200 dark:text-black py-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Car Images */}
         <div className="space-y-5">
           <img
             src={car.carimgages}
             alt={car.model}
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg h-72 shadow-lg w-full"
           />
           {/* Additional Images Carousel */}
           <div className="carousel w-full">

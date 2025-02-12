@@ -80,24 +80,24 @@ const handlestatusChange=async(id,prevstatus,status)=>{
     return (
        <>
       {cars.length===0?
-        <div className="text-center h-screen my-10">
+        <div className="text-center dark:text-white dark:bg-black h-screen my-10">
         <h2 className="text-xl font-semibold">No one Book Yours Car If Book Then You See and Manage All .</h2>
        
-      </div>: <div className="overflow-x-auto h-screen  mx-auto ">
+      </div>: <div className="overflow-x-auto dark:text-white dark:bg-black h-screen  mx-auto ">
        <div className="item text-center">
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">
-       <h2 className="my-10 text-xl font-bold">Manage Your Cars </h2>
-<div tabIndex={0} role="button" className="btn btn-outline m-1">Sort Date</div>
-<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+       <h2 className="my-10 text-xl text-center font-bold">Manage Your Cars  </h2>
+<div tabIndex={0} role="button" className="btn dark:text-white btn-outline m-1">Sort Date</div>
+<ul tabIndex={0} className="dropdown-content dark:text-black menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
  <li><button onClick={()=>handleSortDate('desc')}>Newest First</button></li>
  <li><button onClick={()=>handleSortDate('asc')} >Oldest First</button></li>
 </ul>
 </div>
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">
-<div   tabIndex={0} role="button" className="btn btn-outline m-1">Sort By Price</div>
-<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+<div   tabIndex={0} role="button" className="btn dark:text-white btn-outline m-1">Sort By Price</div>
+<ul tabIndex={0} className="dropdown-content dark:text-black menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
  <li><button onClick={()=>handleSortPrice('asc')}>Lowest First</button></li>
  <li><button onClick={()=>handleSortPrice('desc')}>Highest First</button></li>
 </ul>
@@ -106,7 +106,8 @@ const handlestatusChange=async(id,prevstatus,status)=>{
      <table className="table">
        {/* head */}
        <thead>
-         <tr className="hover:bg-purple-100">
+         <tr className="hover:bg-gray-100  dark:text-white  Manage Your Cars
+">
            <th>
             
            </th>
@@ -121,7 +122,7 @@ const handlestatusChange=async(id,prevstatus,status)=>{
        
     {
      cars.map((car,i)=>
-       <tr className="hover:bg-blue-100" key={car._id}>
+       <tr className="hover:bg-gray-400" key={car._id}>
    {/* dailyPrice, availibility, features,reg_number, carimgages, location,  */}
        <th>
         <p>{i+1}</p>
@@ -170,7 +171,7 @@ Rental Period Start:{ car.startDate&& format(new Date(car?.startDate),"dd-MM-yyy
 
 disabled={car.status === "accept" || car.status === "cancel"}
          onClick={()=>handlestatusChange(car._id,car.status,"accept")}
-            className="btn  btn-primary ">
+            className="btn  dark:border-white  dark:text-white btn-primary ">
            <FcAcceptDatabase />
 
 </button>
@@ -178,7 +179,7 @@ disabled={car.status === "accept" || car.status === "cancel"}
 <button  
 disabled={car.status === "accept" || car.status === "cancel"}
 onClick={()=>handlestatusChange(car._id,car.status,"cancel")}
- className="btn btn-square btn-outline">
+ className="btn dark:border-white  dark:text-white  btn-square btn-outline">
 <svg
  xmlns="http://www.w3.org/2000/svg"
  className="h-6 w-6"
@@ -206,8 +207,8 @@ onClick={()=>handlestatusChange(car._id,car.status,"cancel")}
      </table>
          {/* Booking Confirmation Modal */}
          {isModalOpen && (
-        <div className="modal modal-open ">
-          <div className="modal-box flex flex-col items-center">
+        <div className="modal modal-open dark:bg-gray-400 ">
+          <div className="modal-box flex  flex-col items-center">
             <h3 className="font-bold text-lg">Edit Your Booking</h3>
 
 

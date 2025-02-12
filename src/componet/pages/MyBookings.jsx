@@ -169,26 +169,26 @@ handleEdit(id)
     return (
        <>
       {cars.length===0?
-        <div className="text-center h-screen my-10">
+        <div className="text-center dark:text-white dark:bg-black h-screen my-10">
         <h2 className="text-xl font-semibold">You have no cars Booked.</h2>
         <p className="mt-4">
           Click <Link to="/available" className="text-blue-500 underline">here</Link> to add a car.
         </p>
-      </div>: <div className="overflow-x-auto mx-auto h-screen ">
+      </div>: <div className="overflow-x-auto dark:text-white dark:bg-black mx-auto h-screen ">
        <div className="item text-center">
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">
        <h2 className="my-10 text-xl font-bold">Your Booking Cars </h2>
-<div tabIndex={0} role="button" className="btn btn-outline m-1">Sort Date</div>
-<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+<div tabIndex={0} role="button" className="btn dark:text-white btn-outline m-1">Sort Date</div>
+<ul tabIndex={0} className="dropdown-content dark:text-black menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
  <li><button onClick={()=>handleSortDate('desc')}>Newest First</button></li>
  <li><button onClick={()=>handleSortDate('asc')} >Oldest First</button></li>
 </ul>
 </div>
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">
-<div   tabIndex={0} role="button" className="btn btn-outline m-1">Sort By Price</div>
-<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+<div   tabIndex={0} role="button" className="btn btn-outline dark:text-white m-1">Sort By Price</div>
+<ul tabIndex={0} className="dropdown-content dark:text-black menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
  <li><button onClick={()=>handleSortPrice('asc')}>Lowest First</button></li>
  <li><button onClick={()=>handleSortPrice('desc')}>Highest First</button></li>
 </ul>
@@ -197,7 +197,7 @@ handleEdit(id)
      <table className="table">
        {/* head */}
        <thead>
-         <tr className="hover:bg-purple-100">
+         <tr className="hover:bg-purple-100 dark:text-white">
            <th>
             
            </th>
@@ -213,7 +213,7 @@ handleEdit(id)
        
     {
      cars.map((car,i)=>
-       <tr className="hover:bg-blue-100" key={car._id}>
+       <tr className="hover:bg-gray-400" key={car._id}>
    {/* dailyPrice, availibility, features,reg_number, carimgages, location,  */}
        <th>
         <p>{i+1}</p>
@@ -263,14 +263,14 @@ disabled={car.status === "accept" || car.status === "cancel"}
             setModalOpen(true); 
           handleEdit(car._id)
           }}
-            className="btn  btn-primary ">
+            className="btn dark:text-white btn-primary ">
               <MdEdit />
 
 </button>
 
 <button 
 disabled={car.status === "accept" || car.status === "cancel"}
-onClick={()=>handleDelete(car._id)} className="btn btn-square btn-outline">
+onClick={()=>handleDelete(car._id)} className="btn dark:text-white btn-square btn-outline">
 <svg
  xmlns="http://www.w3.org/2000/svg"
  className="h-6 w-6"
@@ -285,7 +285,7 @@ onClick={()=>handleDelete(car._id)} className="btn btn-square btn-outline">
 </svg>
 </button>
 <span> 
-<NavLink   to={`/cardetails/${car?.carId}`} className='btn btn-square btn-outline'>
+<NavLink   to={`/cardetails/${car?.carId}`} className='btn dark:text-white btn-square btn-outline'>
 <FaEye />
 </NavLink>
 </span>
@@ -295,7 +295,7 @@ onClick={()=>handleDelete(car._id)} className="btn btn-square btn-outline">
   <th>
 <NavLink  to={`/reviewcard/${car?.carId}`}
 disabled={car.status === "pending" || car.status === "cancel"}
- className="btn btn-outline ">
+ className="btn btn-outline dark:text-white ">
 <VscPreview />
 </NavLink>
   </th>

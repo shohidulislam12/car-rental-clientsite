@@ -59,8 +59,8 @@ const AvailableCars = () => {
 
 //console.log(search)
   return (
-    <div className="p-5">
-      <div className="flex justify-between items-center mb-5">
+    <div className="p-5 dark:bg-black dark:text-white">
+      <div className="flex  justify-between items-center mb-5">
         {/* Search Bar */}
         <input
           type="text"
@@ -114,7 +114,7 @@ const AvailableCars = () => {
            avlcars.map(car=>
               <NavLink to={`/cardetails/${car._id}`} 
               key={car._id}
-              className="card  bg-base-100  shadow-md border border-gray-200"
+              className="card p-2 bg-base-100 dark:bg-gray-100 dark:text-black shadow-md border border-gray-200"
             >
               <figure>
                 <img
@@ -156,7 +156,7 @@ const AvailableCars = () => {
             avlcars.map(car=>
               <NavLink to={`/cardetails/${car._id}`}
               key={car._id}
-              className="card flex md:flex-row flex-col items-center  bg-base-100 shadow-md border gap-4 p-5  border-gray-200"
+              className="card flex dark:bg-gray-100 dark:text-black md:flex-row flex-col items-center  bg-base-100 shadow-md border gap-4 p-5  border-gray-200"
             >
               <div className="">
               <figure>

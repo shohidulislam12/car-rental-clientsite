@@ -95,37 +95,37 @@ const data = [
        <>
 
       {cars.length===0?
-        <div className="text-center h-screen  my-10">
+        <div className="text-center dark:bg-black dark:text-white h-screen  my-10">
         <h2 className="text-xl font-semibold">You have no cars listed.</h2>
         <p className="mt-4">
           Click <Link to="/addcar" className="text-blue-500 underline">here</Link> to add a car.
         </p>
-      </div>: <div className="overflow-x-auto h-screen mx-auto ">
+      </div>: <div className="overflow-x-auto dark:bg-black dark:text-white  h-screen mx-auto ">
        <div className="item text-center">
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">
        <h2 className="my-10 text-xl font-bold">Your Added Cars </h2>
-<div tabIndex={0} role="button" className="btn btn-outline m-1">Sort Date</div>
-<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+<div tabIndex={0} role="button" className="btn dark:text-white btn-outline m-1">Sort Date</div>
+<ul tabIndex={0} className="dropdown-content dark:text-black menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
  <li><button onClick={()=>handleSortDate('desc')}>Newest First</button></li>
  <li><button onClick={()=>handleSortDate('asc')} >Oldest First</button></li>
 </ul>
 </div>
          {/* sorting buton */}
        <div className="dropdown dropdown-bottom dropdown-end">
-<div   tabIndex={0} role="button" className="btn btn-outline m-1">Sort By Price</div>
-<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+<div   tabIndex={0} role="button" className="btn dark:text-white btn-outline m-1">Sort By Price</div>
+<ul tabIndex={0} className="dropdown-content dark:text-black menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
  <li><button onClick={()=>handleSortPrice('asc')}>Lowest First</button></li>
  <li><button onClick={()=>handleSortPrice('desc')}>Highest First</button></li>
 </ul>
 </div>
        </div>
      
-     <table className="table">
+     <table className="table ">
        {/* head */}
        
        <thead>
-         <tr>
+         <tr className="dark:text-white">
            <th>
             
            </th>
@@ -176,10 +176,10 @@ const data = [
        <label onClick={
         ()=>handleUpdate(car._id)
         
-       } htmlFor="my_modal_6" className="btn btn btn-square btn-outline"><MdEdit /></label>
+       } htmlFor="my_modal_6" className="btn dark:text-white btn-square btn-outline"><MdEdit /></label>
 
 
-<button onClick={()=>handleDelete(car._id)} className="btn btn-square btn-outline">
+<button onClick={()=>handleDelete(car._id)} className="btn dark:text-white btn-square btn-outline">
 <svg
  xmlns="http://www.w3.org/2000/svg"
  className="h-6 w-6"

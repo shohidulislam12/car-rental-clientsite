@@ -55,10 +55,10 @@ if(availability===''){
     
 
     return (
-        <div className='my-10 '>
-            <h2 className='text-xl font-bold text-center'>Provide Cars Information </h2>
-             <form onSubmit={handleSubmit} className="card-body grid rounded-xl text-xl font-semibold  lg:w-[80%] border shadow-xl mx-auto md:grid-cols-2 grid-cols-1  items-center">
-        <div className="form-control ">
+        <div className='py-10 dark:bg-black dark:text-white  '>
+            <h2 className='text-xl font-bold text-center p-4'>Provide Cars Information </h2>
+             <form onSubmit={handleSubmit} className="card-body dark:bg-white dark:text-white grid rounded-xl text-xl font-semibold  lg:w-[80%] border shadow-xl mx-auto md:grid-cols-2 grid-cols-1  items-center">
+        <div className="form-control   ">
                     
           <label className="label">
             <span className="label-text">Car Model</span>

@@ -55,11 +55,11 @@ const handleSubmit= async (e)=>{
     const modal=car.modal
     const userPhoto= userData?.photo
     const formdata={rating,description,carid:id,carImage,userPhoto,userEmail,modal}
-    //console.log(formdata)
+   
     try {
-        // Make the API call to save the car details
+ 
         const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/review`, formdata);
-        //console.log(data); 
+     
            toast.success("sucessFully added")
            navigate('/mybookings')
       } catch (error) {
@@ -76,7 +76,8 @@ const handleSubmit= async (e)=>{
 
 
     return (
-        <div className="w-1/2 mx-auto border my-10 border-gray-400 bg-base-200"> 
+      <div className="dark:bg-black pt-20">
+          <div className="w-1/2  mx-auto border  py-10 border-gray-400 bg-base-200"> 
              <form onSubmit={handleSubmit} className="card-body">
                 <h2>Review : {car?.modal}</h2>
         <div className="form-control">
@@ -103,6 +104,7 @@ const handleSubmit= async (e)=>{
 
       </form>
         </div>
+      </div>
     );
 };
 

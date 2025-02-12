@@ -8,7 +8,7 @@ import axios from "axios";
 import { MdLightMode,MdDarkMode } from "react-icons/md";
 
 const Navbar = () => {
-  const {user,setUser,theme,settheme}=useContext(AuthContext)
+  const {user,setUser}=useContext(AuthContext)
    const [userData,setUserdata]=useState([])
   const navigate=useNavigate()
   //add darkmood 
@@ -22,11 +22,11 @@ const Navbar = () => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
-      settheme('dark')
+     
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
-      settheme('light')
+      
     }
   }, [darkMode]);
 
@@ -81,7 +81,7 @@ const Navbar = () => {
   </>
   
     return (
-        <div className={`navbar ${theme==='dark'?'bg-black text-white':'text-black bg-base-200' } top-0 fixed z-50 container mx-auto left-0 right-0   `}>
+        <div className={`navbar dark:bg-black dark:text-white top-0 fixed z-50 container mx-auto left-0 right-0   `}>
         <div className="flex-1 gap-2">
           <img className="h-10 w-10 rounded-sm" src="https://i.postimg.cc/hj7RWKwt/logo.jpg" alt="" />
           <Link to='/' className="text-2xl  font-semibold rancho">CarGoRent</Link>

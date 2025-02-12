@@ -91,25 +91,25 @@ return  navigate(from)
     }
 
     return (
-        <div className="flex justify-center mx-auto  items-center min-h-screen bg-green-100">
+        <div className="flex justify-center mx-auto  items-center min-h-screen dark:bg-gray-400 bg-green-100">
         <div className="bg-white flex md:flex-row flex-col rounded-lg shadow-lg overflow-hidden max-w-5xl w-full">
           {/* Left Section */}
-          <div className="md:w-1/2 w-full p-5  bg-gradient-to-b from-green-300 to-green-100 flex justify-center items-center">
+          <div className="md:w-1/2 w-full p-5 dark:bg-gray-500  ">
             <img
               src="https://i.postimg.cc/zB1sc73P/car5.jpg"
               alt="Car"
-              className="w-full h-full p-10 rounded-2xl"
+              className="w-full h-full rounded-2xl"
             />
           </div>
-          <div className="md:w-1/2 w-full p-5 p-8 relative">
-            <button className="absolute top-4 right-4 text-gray-400 text-xl hover:text-gray-600">
+          <div className="md:w-1/2 w-full dark:bg-black dark:text-white  p-8 relative">
+            <button className=" dark:text-white absolute top-4 right-4 text-gray-400 text-xl hover:text-gray-600">
               &times;
             </button>
  
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            <h2 className="text-2xl dark:text-white font-bold mb-4 text-gray-800">
              Registar your Account
             </h2>
-            <p className="text-sm text-gray-600 mb-6">
+            <p className="text-sm dark:text-white text-gray-600 mb-6">
             "Let’s get you ready for your first trip. A few quick details, and you’re good to go!"
             </p>
   

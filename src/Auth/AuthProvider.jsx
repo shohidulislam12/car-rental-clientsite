@@ -8,8 +8,9 @@ export const AuthContext=createContext(null)
 const AuthProvider = ({ children}) => {
 const [user,setUser]=useState(null)
 const [loader,setloader]=useState(true)
-const [theme,settheme]=useState('light')
-console.log(theme)
+
+const provider = new GoogleAuthProvider();
+
 
 const ceratUser=(email, password)=>{
   setloader(true)
@@ -83,7 +84,7 @@ useEffect(() => {
 
 
 const authInf={
-user,loader,ceratUser,signInWithEmail,googleLogin,setUser,signOut,theme,settheme
+user,loader,ceratUser,signInWithEmail,googleLogin,setUser,signOut
 }
 //console.log("user",user)
 
